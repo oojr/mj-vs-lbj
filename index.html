@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>MJ vs LBJ</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<!---Google Graph API -->
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="javascripts/graph.js"></script>
+</head>
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+      <h2>Michael Jordan and Lebron James Comparison</h2>
+      <p>This is a comparison of both basketball greats after their first nine regular seasons and first seven postseasons in the NBA</p>
+      <hr />
+    </div>
+  </div>
+   <!-- Thumbnails -->
+
+        <div class="row">
+        <div class="six columns centered">
+
+          <div class="six mobile-two columns">
+            <img src="images/jordan.jpg">
+            <div class="panel">
+              <ul>
+              <li><strong>Michael Jordan</strong></li>
+              <li><strong>6'6'' 216lbs</strong></li>
+              <li><strong>Championships: </strong> 6 </li>
+             </ul>
+            </div>
+
+          </div>
+
+          <div class="six mobile-two columns">
+            <img src="images/lebron.jpg">
+            <div class="panel">
+              <ul>
+              <li><strong>Lebron James</strong></li>
+              <li><strong>6'8'' 250lbs</strong></li>
+              <li><strong>Championships: </strong> 1 </li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      <!-- End Thumbnails -->
+
+  <div class="row">
+    <div class="nine columns centered white-background">
+      <h3>Regular Season Stats</h3>
+       <dl class="tabs contained ">
+        <dd class="active"><a href="#reg1">Points</a></dd>
+        <dd><a href="#reg2">Shooting %</a></dd>
+        <dd><a href="#reg3">Rebounds</a></dd>
+        <dd><a href="#reg4">Assists</a></dd>
+        <dd><a href="#reg5">Blocks</a></dd>
+        <dd><a href="#reg6">Steals</a></dd>
+      </dl>
+    <ul class="tabs-content contained">
+      <li class="active" id="reg1Tab"> <div id="pt-chart"></div></li>
+      <li id="reg2Tab"><div id="shot-chart"></div></li>
+      <li id="reg3Tab"><div id="rb-chart"></div></li>
+      <li id="reg4Tab"><div id="ast-chart"></div></li>
+      <li id="reg5Tab"><div id="blk-chart"></div></li>
+      <li id="reg6Tab"><div id="stl-chart"></div></li>
+    </ul>
+      
+  </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="nine columns centered white-background">
+      <h3>Postseason Stats</h3>
+       <dl class="tabs contained">
+        <dd class="active"><a href="#post1">Points</a></dd>
+        <dd><a href="#post2">Shooting %</a></dd>
+        <dd><a href="#post3">Rebounds</a></dd>
+        <dd><a href="#post4">Assists</a></dd>
+        <dd><a href="#post5">Blocks</a></dd>
+        <dd><a href="#post6">Steals</a></dd>
+      </dl>
+    <ul class="tabs-content contained">
+      <li class="active" id="post1Tab"> <div id="post-pt-chart"></div></li>
+      <li id="post2Tab"><div id="post-shot-chart"></div></li>
+      <li id="post3Tab"><div id="post-rb-chart"></div></li>
+      <li id="post4Tab"><div id="post-ast-chart"></div></li>
+      <li id="post5Tab"><div id="post-blk-chart"></div></li>
+      <li id="post6Tab"><div id="post-stl-chart"></div></li>
+    </ul>
+      
+  </div>
+    
+  </div>
+      
+  </div>
+    
+  </div>
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>data presented by <a href="http://twitter.com/oojx" target="_blank">@oojx</a></p>
+        </div>
+        <div class="six columns">
+          <ul class="inline-list right">
+            <li><a href="http://github.com/oojr/mj-vs-lbj" target="_blank">View on Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26554204-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+     
+  
+</body>
+</html>
